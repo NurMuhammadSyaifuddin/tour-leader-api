@@ -1,0 +1,107 @@
+###
+POST http://localhost:8080/api/groups
+Api-Key: secret_tour_leader_api
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_group": "4a",
+  "name": "Kencana Jaya",
+  "detail": "Nikmati perjalananmu",
+  "avatar": null,
+  "qrcode": [
+    1,
+    2,
+    3
+  ]
+}
+
+###
+GET http://localhost:8080/api/groups
+Api-Key: secret_tour_leader_api
+Accept: application/json
+
+###
+PUT http://localhost:8080/api/groups/1a
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Udin Mbatur",
+  "detail": "jos",
+  "avatar": "C:/Users/udin/Postman/files/bis.jpg"
+}
+
+###
+PUT http://localhost:8080/api/groups/32601900026
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Udin Payment",
+  "detail": "Berani",
+  "avatar": [
+    0,
+    0,
+    0
+  ]
+}
+
+###
+
+PUT http://localhost:8080/api/groups/4a/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "users": [
+    {
+      "id_member": "",
+      "date": "senin"
+    }
+  ]
+}
+
+###
+DELETE http://localhost:8080/api/groups/1a
+Accept: application/json
+
+###
+GET http://localhost:8080/api/groups
+Accept: application/json
+
+###
+DELETE http://localhost:8080/api/groups/users/32601900026
+Accept: application/json
+
+###
+DELETE http://localhost:8080/api/groups/4a/users/001
+Accept: application/json
+
+###
+GET http://localhost:8080/api/groups/users/32601900026
+Accept: application/json
+
+###
+PUT http://localhost:8080/api/groups/1a/chats
+Content-Type: application/json
+Accept: application/json
+
+{
+  "chats": [
+    {
+      "id_chat": "05",
+      "message": [0, 0, 0],
+      "detail": "ini bus",
+      "date": "kamis"
+    }
+  ]
+}
+
+###
+DELETE http://localhost:8080/api/groups/1a/chats/01
+Accept: application/json
+
+###
+DELETE http://localhost:8080/api/groups/1a/chats
+Accept: application/json
