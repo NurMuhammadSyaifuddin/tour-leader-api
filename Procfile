@@ -1,0 +1,1 @@
+web: java -jar build/libs/tour-leader-api-0.0.1-SNAPSHOT.jar
