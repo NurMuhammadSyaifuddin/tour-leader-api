@@ -1,15 +1,15 @@
 version: '3.5'
 
 services:
-  tour-leader-api:
-    container_name: "tour-leader-api"
-    image: tour-leader-api-services:0.0.1
-    ports:
-      - "8080:8080"
-    environment:
-      DATABASE_USERNAME: tour_leader
-      DATABASE_PASSWORD: tour_leader
-      DATABASE_URL: jdbc:postgresql://tour-leader-api-postgres:5432/tour_leader_groups
+#  tour-leader-api:
+#    container_name: "tour-leader-api"
+#    image: tour-leader-api-services:0.0.1
+#    ports:
+#      - "8080:8080"
+#    environment:
+#      DATABASE_USERNAME: tour_leader
+#      DATABASE_PASSWORD: tour_leader
+#      DATABASE_URL: jdbc:postgresql://tour-leader-api-postgres:5432/tour_leader_groups
   tour-leader-api-postgres:
     container_name: "tour-leader-api-postgres"
     image: postgres:15.1
