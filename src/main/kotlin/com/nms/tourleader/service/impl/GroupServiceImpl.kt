@@ -176,7 +176,7 @@ class GroupServiceImpl(
             name = group.name,
             detail = group.detail,
             avatar = group.avatar,
-            barcode = group.qrcode,
+            qrcode = group.qrcode,
             chats = group.chats,
             users = group.users
         )

@@ -8,7 +8,7 @@ data class GroupResponse    (
     val name: String,
     val detail: String,
     val avatar: ByteArray?,
-    val barcode: ByteArray?,
+    val qrcode: ByteArray?,
     val chats: MutableList<Chat>?,
     val users: MutableSet<Member>?
 ) {
